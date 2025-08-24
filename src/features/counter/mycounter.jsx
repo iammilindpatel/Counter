@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 // Import the actions we created in our slice
 import { decrement, increment, incrementByAmount } from './myCounterSlice.jsx';
 
-export function Counter() {
+export default function Counter() {
   // useSelector reads a value from the store.
   // The function you pass it is called a "selector".
   const count = useSelector((state) => state.counter.value);
@@ -43,4 +43,3 @@ export function Counter() {
   );
 }
 
-export default Counter;
